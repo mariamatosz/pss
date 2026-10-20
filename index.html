@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Subnotificação da violência obstétrica no Brasil</title>
+<meta name="description" content="Plataforma de conscientização sobre violência obstétrica para gestantes, puérperas e mulheres que 
+querem engravidar.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container">
+    <a class="logo" href="#topo">Parto sem silêncio</a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="links" id="menu" aria-label="Seções">
+      <a href="#entenda">Sobre</a>
+      <a href="#painel">Dados</a>
+      <a href="#direitos">Direitos</a>
+      <a href="#fontes">Fontes</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+
+  <div class="container hero">
+    <div class="tcc">
+      <img class="logo-ifb" src="img/logo-ifb.png" alt="Logo do Instituto Federal de Brasília" height="48" onerror="this.remove()">
+      <p class="eyebrow">Projeto de TCC · IFB · TSI</p>
+    </div>
+    <h1>Subnotificação da <em>violência obstétrica</em> no Brasil</h1>
+    <p class="sub">Uma proposta de sistema web para conscientização de mulheres gestantes, puérperas e que querem engravidar: reconhecer práticas abusivas, conhecer seus direitos e saber onde buscar ajuda.</p>
+    <div class="btns">
+      <a class="btn primary" href="#entenda">Entender o tema</a>
+      <a class="btn ghost" href="#painel">Ver os dados</a>
+    </div>
+
+    <div class="hstats">
+      <div class="hstat" style="--c:var(--purple);--n:#6d3fd6">
+        <div class="n">~1 em 4</div>
+        <p>mulheres relatam violência física ou psicológica no parto, em 2010 e de novo em 2023.</p>
+        <a class="src" href="#fonte-fpa2023">Perseu Abramo e Sesc, 2023</a>
+      </div>
+      <div class="hstat" style="--c:var(--rose);--n:#9b1c2e">
+        <div class="n">56%</div>
+        <p>dos partos vaginais tiveram episiotomia no Nascer no Brasil. A OMS recomenda cerca de 10%.</p>
+        <a class="src" href="#fonte-declercq2014">Declercq, 2014</a>
+      </div>
+      <div class="hstat" style="--c:var(--gold);--n:#a0501a">
+        <div class="n">29,5%</div>
+        <p>das mulheres do setor público ficaram sem acompanhante durante toda a internação, contra 4,7% no privado.</p>
+        <a class="src" href="#fonte-diniz2014">Diniz et al., 2014</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="entenda" class="band">
+    <div class="container">
+      <p class="eyebrow">Entenda</p>
+      <h2>O que é violência obstétrica</h2>
+      <p class="lede">É um conjunto de práticas institucionais naturalizadas nos serviços de saúde, como humilhações, intervenções invasivas e procedimentos feitos sem consentimento informado. A Organização Mundial da Saúde reconhece essas situações como formas de maus-tratos durante a assistência ao parto. <a class="src" href="#fonte-oms2014">OMS, 2014</a></p>
+
+      <div class="info">
+        <article class="icard">
+          <h3>Um termo em debate</h3>
+          <p>No Brasil não existe lei federal específica sobre violência obstétrica, e o próprio termo é debatido entre parlamentares e pesquisadores. Na prática, as mulheres relatam situações concretas, como exames dolorosos e falta de acompanhante. <a class="src" href="#fonte-camara2023">Agência Câmara, 2023</a></p>
+        </article>
+        <article class="icard">
+          <h3>O que a lei já garante</h3>
+          <p>Acompanhante de livre escolha no trabalho de parto, no parto e no pós-parto imediato, nos serviços do SUS (Lei nº 11.108/2005). Mesmo assim, só 32,7% das mulheres tiveram acompanhante na hora do parto. <a class="src" href="#fonte-diniz2014">Diniz et al., 2014</a></p>
+        </article>
+        <article class="icard">
+          <h3>Práticas que não deveriam ser rotina</h3>
+          <p>O estudo Nascer no Brasil lista ocitocina, cateter venoso, jejum, amniotomia, episiotomia e manobra de Kristeller entre as intervenções que deveriam ser abolidas no parto de risco habitual. <a class="src" href="#fonte-leal2014">Leal et al., 2014</a></p>
+        </article>
+        <article class="icard">
+          <h3>O que dizem as mulheres</h3>
+          <p>A pesquisa Perseu Abramo e Sesc de 2023 ouviu 2.440 mulheres de 15 anos ou mais. Cerca de uma em cada quatro relatou violência física ou psicológica no parto. <a class="src" href="#fonte-fpa2023">Perseu Abramo e Sesc, 2023</a></p>
+        </article>
+      </div>
+
+      <div class="glos-head">
+        <h3>Palavras que aparecem no parto</h3>
+        <button class="seg" type="button" id="glos-toggle" aria-pressed="false">Abrir todas</button>
+      </div>
+      <div class="glos" id="glossario"></div>
+    </div>
+  </section>
+
+  <section id="painel">
+    <div class="container">
+      <p class="eyebrow">Os dados</p>
+      <h2>Subnotificação da violência obstétrica no Brasil</h2>
+      <p class="lede">Escolha um tema. Em cada aba, passe o mouse ou foque nas barras para ver o valor, e use os botões para trocar a visão.</p>
+
+      <div class="tabs" role="tablist" aria-label="Seções do painel">
+        <button class="tab" role="tab" id="tab-tipos" aria-controls="painel-tipos" aria-selected="true" data-painel="tipos">Tipos de violência</button>
+        <button class="tab" role="tab" id="tab-numeros" aria-controls="painel-numeros" aria-selected="false" tabindex="-1" data-painel="numeros">Subnotificação em números</button>
+        <button class="tab" role="tab" id="tab-barreiras" aria-controls="painel-barreiras" aria-selected="false" tabindex="-1" data-painel="barreiras">Por que não denunciam</button>
+        <button class="tab" role="tab" id="tab-perfil" aria-controls="painel-perfil" aria-selected="false" tabindex="-1" data-painel="perfil">Perfil das vítimas</button>
+        <button class="tab" role="tab" id="tab-internacional" aria-controls="painel-internacional" aria-selected="false" tabindex="-1" data-painel="internacional">Comparativo internacional</button>
+      </div>
+
+      <div class="painel" role="tabpanel" id="painel-tipos" aria-labelledby="tab-tipos"></div>
+      <div class="painel" role="tabpanel" id="painel-numeros" aria-labelledby="tab-numeros" hidden></div>
+      <div class="painel" role="tabpanel" id="painel-barreiras" aria-labelledby="tab-barreiras" hidden></div>
+      <div class="painel" role="tabpanel" id="painel-perfil" aria-labelledby="tab-perfil" hidden></div>
+      <div class="painel" role="tabpanel" id="painel-internacional" aria-labelledby="tab-internacional" hidden></div>
+      <noscript><p class="note">As abas precisam de JavaScript. Os números estão listados na seção Fontes.</p></noscript>
+    </div>
+  </section>
+
+  <section id="direitos">
+    <div class="container">
+      <p class="eyebrow">Seus direitos</p>
+      <h2>Informação protege. Saber o que é seu muda o parto</h2>
+      <p class="lede">Conhecer os direitos e os canais de denúncia ajuda a transformar uma experiência silenciada em um registro.</p>
+      <div class="rights">
+        <div class="right"><h3>Acompanhante</h3><p>Você tem direito a um acompanhante de sua escolha no trabalho de parto, no parto e no pós-parto imediato, nos serviços do SUS (Lei nº 11.108/2005).</p></div>
+        <div class="right"><h3>Informação e consentimento</h3><p>Você pode pedir que expliquem cada procedimento, o motivo e as alternativas antes de qualquer intervenção.</p></div>
+        <div class="right"><h3>Registro</h3><p>Anote datas, nomes, o que foi feito e peça cópia do prontuário. Esses registros ajudam em qualquer denúncia.</p></div>
+      </div>
+      <div class="channels" id="canais"></div>
+      <p class="note">Confira os canais atualizados nos sites oficiais. Esta página não substitui orientação jurídica ou médica.</p>
+    </div>
+  </section>
+
+  <section id="fontes" class="band">
+    <div class="container">
+      <p class="eyebrow">Fontes</p>
+      <h2>De onde vêm os números</h2>
+      <p class="lede">A plataforma não produz dados próprios: reúne informações já disponíveis em pesquisas e bases públicas, mais 
+        os dados do OuvidorSUS obtidos via Lei de Acesso à Informação (Fala.BR). Isso mostra um dos problemas do tema: não existe um 
+        sistema nacional de monitoramento da violência obstétrica. 
+      <ol class="fontes" id="lista-fontes"></ol>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Reconhecer é o primeiro passo para buscar ajuda</h2>
+      <p>Uma proposta de sistema web para conscientização de mulheres gestantes, puérperas e que querem engravidar.</p>
+      <a class="btn" href="#topo">Voltar ao início</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <span>Maria Fernanda Souza Matos, 2026 · Orientadora: Profa. Dra. Sylvana Karla da Silva de Lemos Santos</span>
+    <span class="foot-tcc"><img class="logo-ifb sm" src="img/logo-ifb.png" alt="" height="32" onerror="this.remove()">Tecnologia em Sistemas para Internet · IFB Campus Brasília</span>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
