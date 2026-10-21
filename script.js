@@ -1,4 +1,3 @@
-
 (function () {
   'use strict';
 
@@ -275,7 +274,8 @@
 
   var canais = document.getElementById('canais');
   D.canais.forEach(function (c) {
-    var d = el('div', 'channel');
+    var d = el(c.url ? 'a' : 'div', 'channel');
+    if (c.url) { d.href = c.url; d.target = '_blank'; d.rel = 'noopener noreferrer'; d.setAttribute('aria-label', c.n + ', ' + c.d + ' (abre em nova aba)'); }
     d.appendChild(el('strong', null, c.n));
     d.appendChild(el('span', null, c.d));
     canais.appendChild(d);

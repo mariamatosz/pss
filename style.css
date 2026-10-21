@@ -35,7 +35,6 @@ h2{font-size:clamp(1.6rem,3.6vw,2.2rem);line-height:1.2;font-weight:800;margin-b
 .src{font-size:.8125rem;font-weight:600;color:var(--brand)}
 .band{background:var(--surface)}
 
-/* nav */
 .nav{position:sticky;top:0;z-index:10;background:rgba(244,234,253,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav .container{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;position:relative}
 .logo{font-weight:800;text-decoration:none;color:var(--brand)}
@@ -49,7 +48,6 @@ h2{font-size:clamp(1.6rem,3.6vw,2.2rem);line-height:1.2;font-weight:800;margin-b
 .menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
 .menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
-/* hero */
 .hero{padding-block:80px 64px}
 .hero h1{font-size:clamp(2.1rem,5.6vw,3.6rem);line-height:1.08;font-weight:800;max-width:18ch;margin-bottom:20px}
 .hero h1 em{font-style:normal;color:var(--brand)}
@@ -65,7 +63,6 @@ h2{font-size:clamp(1.6rem,3.6vw,2.2rem);line-height:1.2;font-weight:800;margin-b
 .hstat .n{font-size:2.4rem;font-weight:800;line-height:1;color:var(--n)}
 .hstat p{font-size:.9375rem;color:var(--ink-2);flex:1}
 
-/* tipos */
 .types{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:14px;align-items:start}
 .tcard{background:var(--bg);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:6px;padding:18px}
 .tcard h3{font-size:1.15rem;line-height:1.25;margin-bottom:8px}
@@ -74,7 +71,6 @@ details{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
 summary{cursor:pointer;font-weight:700;font-size:.9375rem;color:var(--brand);min-height:32px}
 details p{margin-top:8px;color:var(--ink-2);font-size:.9375rem}
 
-/* abas */
 .tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
 .tab{background:var(--surface);border:1px solid var(--line);color:var(--ink);padding:9px 16px;border-radius:4px;font-size:.9375rem;cursor:pointer;min-height:44px}
 .tab:hover{border-color:var(--brand)}
@@ -99,7 +95,6 @@ details p{margin-top:8px;color:var(--ink-2);font-size:.9375rem}
 .cnota{margin-top:16px;font-size:.875rem;color:var(--ink-2)}
 .cfonte{margin-top:8px;font-size:.8125rem;color:var(--ink-3)}
 
-/* barras */
 .chart{display:grid;gap:16px}
 .crow{display:grid;grid-template-columns:200px minmax(0,1fr);gap:14px;align-items:center}
 .clbl{font-size:.9375rem;color:var(--ink-2)}
@@ -116,7 +111,6 @@ details p{margin-top:8px;color:var(--ink-2);font-size:.9375rem}
 .tip{position:absolute;z-index:5;left:0;bottom:calc(100% + 8px);background:var(--ink);color:#fff;font-size:.8125rem;font-weight:500;line-height:1.35;padding:6px 10px;border-radius:4px;width:max-content;max-width:min(280px,72vw);white-space:normal;pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s}
 .cbar:hover .tip,.cbar:focus-visible .tip{opacity:1;transform:none}
 
-/* parte informativa */
 .defbox{background:var(--bg);border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:6px;padding:20px;display:grid;gap:12px;max-width:80ch}
 .defbox p{color:var(--ink-2)}
 .sub-h{font-size:1.2rem;font-weight:800;margin:40px 0 14px}
@@ -125,12 +119,10 @@ details p{margin-top:8px;color:var(--ink-2);font-size:.9375rem}
 .glossario dt{font-weight:700;color:var(--brand);margin-bottom:4px}
 .glossario dd{margin:0;color:var(--ink-2);font-size:.9375rem}
 
-/* lacuna */
 .gap{margin-top:28px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--rose);border-radius:6px;padding:20px}
 .gap h3{font-size:1.05rem;margin-bottom:8px}
 .gap p{color:var(--ink-2);font-size:.9375rem}
 
-/* direitos */
 .rights{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px}
 .right{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px}
 .right h3{font-size:1.05rem;margin-bottom:8px}
@@ -139,21 +131,21 @@ details p{margin-top:8px;color:var(--ink-2);font-size:.9375rem}
 .channel{background:var(--brand);color:var(--on-brand);border-radius:6px;padding:18px}
 .channel strong{display:block;font-size:1.3rem;line-height:1.2}
 .channel span{font-size:.875rem;opacity:.9}
+a.channel{display:block;text-decoration:none;transition:transform .15s,box-shadow .15s}
+a.channel:hover,a.channel:focus-visible{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.2)}
+a.channel span::after{content:" ↗"}
 
-/* fontes */
 .fontes{list-style:decimal;padding-left:22px;display:grid;gap:14px;max-width:80ch}
 .fontes li{color:var(--ink-2);font-size:.9375rem;padding-left:4px;scroll-margin-top:80px}
 .fontes li:target{background:var(--surface-2);border-radius:4px}
 .fontes a{word-break:break-word;color:var(--brand)}
 
-/* cta */
 .cta{background:var(--brand);color:var(--on-brand);text-align:center}
 .cta h2{max-width:22ch;margin-inline:auto}
 .cta p{max-width:56ch;margin:0 auto 28px;opacity:.92}
 .cta .btn{background:#fff;color:var(--brand);border-color:#fff}
 .cta .btn:hover{background:var(--surface-2)}
 
-/* parte informativa */
 .info{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px}
 .icard{background:var(--bg);border:1px solid var(--line);border-top:4px solid var(--brand);border-radius:6px;padding:18px}
 .icard h3{font-size:1.05rem;line-height:1.25;margin-bottom:8px}
@@ -166,7 +158,6 @@ details p{margin-top:8px;color:var(--ink-2);font-size:.9375rem}
 .gitem summary{font-size:1rem}
 .gitem p{margin-top:6px}
 
-/* abas: cabeçalho de cada painel */
 .ptitle{font-size:clamp(1.4rem,3vw,1.8rem);line-height:1.2;font-weight:800;margin-bottom:8px}
 .plede{max-width:64ch;color:var(--ink-2);margin-bottom:22px}
 .painel .hstats{margin:0 0 22px}
@@ -178,7 +169,6 @@ details p{margin-top:8px;color:var(--ink-2);font-size:.9375rem}
 .ctitle{font-size:1rem;margin-bottom:12px}
 .painel .tcard{background:var(--surface)}
 
-/* lista (leis por país) */
 .lista{list-style:none;display:grid;gap:10px}
 .lista li{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;align-items:start;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
 .lista li.br{border-left:4px solid var(--brick);background:var(--surface-2)}
@@ -186,7 +176,6 @@ details p{margin-top:8px;color:var(--ink-2);font-size:.9375rem}
 .lcorpo{display:grid;gap:2px;color:var(--ink-2);font-size:.9375rem}
 .lcorpo strong{color:var(--ink)}
 
-/* logo do IFB */
 .tcc{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-bottom:20px}
 .tcc .eyebrow{margin:0}
 .logo-ifb{display:block;height:48px;width:auto;max-width:100%}

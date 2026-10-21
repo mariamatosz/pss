@@ -1,4 +1,3 @@
-
 window.DADOS = {
 
   fontes: {
@@ -52,20 +51,15 @@ window.DADOS = {
       completa: 'Medicina S/A. Na contramão de recomendação da OMS, cesarianas representam 60,6% dos partos no Brasil. Dados do SINASC/DATASUS para 2024, divulgados pelo Observatório da Saúde Pública (Umane).',
       url: 'https://medicinasa.com.br/oms-cesarianas/'
     },
-    ieps2022: {
-      curta: 'IEPS (2022)',
-      completa: 'Coelho R, Mrejen M, Remédios J, Campos G. Desigualdades raciais na saúde: cuidados pré-natais e mortalidade materna no Brasil, 2014-2020. Nota Técnica n. 27, Instituto de Estudos para Políticas de Saúde (IEPS), agosto de 2022.',
-      url: 'https://ieps.org.br/wp-content/uploads/2022/08/IEPS_NT27.pdf'
-    },
-    poder360: {
-      curta: 'Poder360 (2023)',
-      completa: 'Poder360. Mortalidade materna atinge mais mulheres negras no Brasil, 28/10/2023. Dados do boletim Saúde da População Negra, Ministério da Saúde.',
-      url: 'https://www.poder360.com.br/saude/mortalidade-materna-atinge-mais-mulheres-negras-no-brasil/'
-    },
     animal2025: {
       curta: 'Grupo Animal (2025)',
       completa: 'Grupo Animal. Violencia obstétrica en América Latina: una historia feminista de reconocimiento y resistencia. 10/11/2025. Anos e leis por país.',
       url: 'https://www.grupoanimal.mx/opinion/violencia-obstetrica-america-latina-resistencia-feminista'
+    },
+    oms2014: {
+      curta: 'OMS (2014)',
+      completa: 'Organização Mundial da Saúde. Prevenção e eliminação de abusos, desrespeito e maus-tratos durante o parto em instituições de saúde. Genebra: OMS, 2014. Citada no TCC desta página como referência para o reconhecimento dessas práticas como maus-tratos.',
+      url: 'https://iris.who.int/server/api/core/bitstreams/562d9fb1-d323-4e1c-b822-4dde906904ef/content'
     },
     fpa2010rel: {
       curta: 'Fundação Perseu Abramo e Sesc (2010)',
@@ -331,42 +325,6 @@ window.DADOS = {
           nota: 'Razões de chance do Nascer no Brasil (2011 e 2012), após pareamento por escore de propensão. O artigo também relata menor chance de anestesia local na episiotomia entre mulheres pretas. Já em maternidades da Rede Cegonha (2017), o indicador "poucas vezes foi bem tratada" foi de 7,6% entre brancas, 8,6% entre pretas e 10,6% entre pardas, mas a diferença deixou de ser significativa depois do ajuste por idade, escolaridade e outros fatores.',
           fontes: ['leal2017', 'alves2021']
         },
-        mortalidade: {
-          rotulo: 'Mortalidade materna',
-          titulo: 'Razão de mortalidade materna por 100 mil nascidos vivos',
-          max: 100,
-          sufixo: '',
-          unidade: ' por 100 mil nascidos vivos',
-          legenda: [
-            { n: 'Média de 2014 a 2019', c: '#6f3fc3' },
-            { n: '2020', c: '#a8393f' }
-          ],
-          linhas: [
-            { l: 'Mulheres negras (pretas e pardas)', series: [
-              { n: 'Média 2014 a 2019', v: 61.6, c: '#6f3fc3' },
-              { n: '2020', v: 75.5, c: '#a8393f' }
-            ]},
-            { l: 'Mulheres brancas', series: [
-              { n: 'Média 2014 a 2019', v: 53.8, c: '#6f3fc3' },
-              { n: '2020', v: 65.5, c: '#a8393f' }
-            ]}
-          ],
-          nota: 'Este gráfico mostra mortalidade materna, não violência obstétrica. Em 2020, 63,4% das mortes maternas por covid-19 foram de mulheres pretas e pardas, segundo dados do Ministério da Saúde citados pelo Poder360.',
-          fontes: ['ieps2022', 'poder360']
-        },
-        df: {
-          rotulo: 'Distrito Federal',
-          titulo: 'Razão de mortalidade materna no Distrito Federal, por 100 mil nascidos vivos',
-          max: 100,
-          sufixo: '',
-          unidade: ' por 100 mil nascidos vivos',
-          linhas: [
-            { l: '2019', v: 21.2, c: '#6f3fc3' },
-            { l: '2020', v: 53.4, c: '#a8393f' }
-          ],
-          nota: 'Este gráfico mostra mortalidade materna, não violência obstétrica. Dados do Boletim Epidemiológico do Ministério da Saúde (2021) e do DATASUS (2022), citados em trabalho de especialização do IFB, que não traz dados de 2021 e 2022. Segundo a mesma fonte, 57,4% das mulheres do DF são negras (PDAD DF, 2021).',
-          fontes: ['sales']
-        },
         setor: {
           rotulo: 'Público x privado',
           titulo: 'Atendimento ao parto por setor (%)',
@@ -477,10 +435,9 @@ window.DADOS = {
     { t: 'Consentimento informado', d: 'Concordar com um procedimento depois de entender o que é, por que é necessário e quais as alternativas.' }
   ],
 
-  
   canais: [
-    { n: 'Ligue 180', d: 'Central de Atendimento à Mulher' },
-    { n: 'Disque 136', d: 'Ouvidoria do SUS, Ministério da Saúde' },
+    { n: 'Ligue 180', d: 'Central de Atendimento à Mulher', url: 'https://www.gov.br/mulheres/pt-br/ligue180' },
+    { n: 'Disque 136', d: 'Ouvidoria do SUS, Ministério da Saúde', url: 'https://www.gov.br/saude/pt-br/canais-de-atendimento/ouvsus' },
     { n: 'Defensoria Pública', d: 'Orientação jurídica gratuita' },
     { n: 'Ouvidoria do hospital, CRM e Coren', d: 'Denúncia sobre o serviço e os profissionais' }
   ]
