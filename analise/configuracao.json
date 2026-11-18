@@ -1,0 +1,299 @@
+{
+  "fonte": "Apêndice A: TCC Parto Sem Silêncio, PDF fornecido pela autora",
+  "coluna_perfil": "b1_q7",
+  "pergunta_perfil": "Qual sua relação principal com o tema desta pesquisa?",
+  "perfis": {
+    "mulheres": [
+      "Mulher com experiência de parto (gestante, puérpera ou mãe)",
+      "Ambas as situações (responder considerando sua experiência pessoal de parto)"
+    ],
+    "profissionais": [
+      "Doula ou profissional de acompanhamento ao parto"
+    ],
+    "outros": [
+      "Outro (especificar)"
+    ]
+  },
+  "coluna_partos": "b2a_q1",
+  "pergunta_partos": "Quantos partos você já teve (incluindo o mais recente)?",
+  "sem_parto": "Estou gestante e ainda não tive nenhum parto",
+  "perguntas": [
+    {
+      "id": "b1_q1",
+      "grupo": "perfil",
+      "coluna": "b1_q1",
+      "pergunta": "Qual a sua faixa etária?",
+      "titulo": "Qual a sua faixa etária?",
+      "opcoes": [
+        "18 a 24 anos",
+        "25 a 34 anos",
+        "35 a 44 anos",
+        "45 anos ou mais"
+      ],
+      "tipo": "unica",
+      "max_escolhas": null,
+      "exclusivas": [],
+      "excluir": [
+        "Prefiro não responder",
+        "Não se aplica"
+      ]
+    },
+    {
+      "id": "b1_q2",
+      "grupo": "perfil",
+      "coluna": "b1_q2",
+      "pergunta": "Como você se autodeclara em relação à raça/cor (IBGE)?",
+      "titulo": "Como você se autodeclara em relação à raça/cor (IBGE)?",
+      "opcoes": [
+        "Branca",
+        "Preta",
+        "Parda",
+        "Amarela",
+        "Indígena",
+        "Prefiro não responder"
+      ],
+      "tipo": "unica",
+      "max_escolhas": null,
+      "exclusivas": [],
+      "excluir": [
+        "Prefiro não responder",
+        "Não se aplica"
+      ]
+    },
+    {
+      "id": "b2a_q4",
+      "grupo": "mulheres",
+      "coluna": "b2a_q4",
+      "pergunta": "Durante o pré-natal, você recebeu informações sobre seus direitos durante o parto?",
+      "titulo": "Durante o pré-natal, você recebeu informações sobre seus direitos durante o parto?",
+      "opcoes": [
+        "Sim, de forma clara e detalhada",
+        "Sim, mas de forma superficial",
+        "Não recebi nenhuma informação sobre meus direitos",
+        "Não lembro"
+      ],
+      "tipo": "unica",
+      "max_escolhas": null,
+      "exclusivas": [],
+      "excluir": [
+        "Prefiro não responder",
+        "Não se aplica"
+      ]
+    },
+    {
+      "id": "b2a_q7",
+      "grupo": "mulheres",
+      "coluna": "b2a_q7",
+      "pergunta": "Você teve acompanhante durante todo o trabalho de parto e/ou parto?",
+      "titulo": "Você teve acompanhante durante todo o trabalho de parto e/ou parto?",
+      "opcoes": [
+        "Sim, por todo o período",
+        "Sim, mas apenas em parte do tempo",
+        "Não, e eu queria ter tido",
+        "Não, mas não era minha preferência",
+        "Não me lembro"
+      ],
+      "tipo": "unica",
+      "max_escolhas": null,
+      "exclusivas": [],
+      "excluir": [
+        "Prefiro não responder",
+        "Não se aplica"
+      ]
+    },
+    {
+      "id": "b2a_q15",
+      "grupo": "mulheres",
+      "coluna": "b2a_q15",
+      "pergunta": "Você considera que viveu algum tipo de violência obstétrica?",
+      "titulo": "Você considera que viveu algum tipo de violência obstétrica?",
+      "opcoes": [
+        "Sim, claramente",
+        "Acho que sim, mas não tenho certeza",
+        "Não",
+        "Não sei o que é violência obstétrica",
+        "Prefiro não responder"
+      ],
+      "tipo": "unica",
+      "max_escolhas": null,
+      "exclusivas": [],
+      "excluir": [
+        "Prefiro não responder",
+        "Não se aplica"
+      ]
+    },
+    {
+      "id": "b2a_q23",
+      "grupo": "mulheres",
+      "coluna": "b2a_q23",
+      "pergunta": "Você chegou a relatar ou denunciar formalmente o ocorrido (ex.: Ouvidoria do SUS, conselho de classe, boletim de ocorrência)?",
+      "titulo": "Você chegou a relatar ou denunciar formalmente o ocorrido (ex.: Ouvidoria do SUS, conselho de classe, boletim de ocorrência)?",
+      "opcoes": [
+        "Sim, e houve algum retorno ou providência",
+        "Sim, mas não houve retorno ou providência",
+        "Não, mas eu saberia onde denunciar",
+        "Não, e não saberia onde denunciar",
+        "Não se aplica"
+      ],
+      "tipo": "unica",
+      "max_escolhas": null,
+      "exclusivas": [],
+      "excluir": [
+        "Prefiro não responder",
+        "Não se aplica"
+      ]
+    },
+    {
+      "id": "b2a_q24",
+      "grupo": "mulheres",
+      "coluna": "b2a_q24",
+      "pergunta": "Se você não denunciou, qual o principal motivo? (selecione até duas opções)",
+      "titulo": "Se você não denunciou, qual o principal motivo? (selecione até duas opções)",
+      "opcoes": [
+        "Desconhecimento dos canais de denúncia",
+        "Medo de retaliação ou de novo julgamento",
+        "Falta de tempo ou energia no pós-parto",
+        "Sentimento de que não vai resultar em nada",
+        "Não reconhecer na hora que era violência",
+        "Vergonha ou culpa",
+        "Alguém próximo me desencorajou a denunciar",
+        "Não queria reviver o ocorrido",
+        "Outro"
+      ],
+      "tipo": "multipla",
+      "max_escolhas": 2,
+      "exclusivas": [],
+      "excluir": [
+        "Prefiro não responder",
+        "Não se aplica"
+      ]
+    },
+    {
+      "id": "b2b_q8",
+      "grupo": "profissionais",
+      "coluna": "b2b_q8",
+      "pergunta": "Durante sua atuação, com que frequência presenciou situações que considera violência obstétrica?",
+      "titulo": "Durante sua atuação, com que frequência presenciou situações que considera violência obstétrica?",
+      "opcoes": [
+        "Nunca",
+        "Raramente",
+        "Algumas vezes",
+        "Frequentemente",
+        "Em quase todos os atendimentos que acompanhei"
+      ],
+      "tipo": "unica",
+      "max_escolhas": null,
+      "exclusivas": [],
+      "excluir": [
+        "Prefiro não responder",
+        "Não se aplica"
+      ]
+    },
+    {
+      "id": "b2b_q11",
+      "grupo": "profissionais",
+      "coluna": "b2b_q11",
+      "pergunta": "Você já orientou ou apoiou uma parturiente a fazer uma denúncia formal após o parto?",
+      "titulo": "Você já orientou ou apoiou uma parturiente a fazer uma denúncia formal após o parto?",
+      "opcoes": [
+        "Sim, mais de uma vez",
+        "Sim, uma vez",
+        "Não, mas já orientei sobre os canais existentes",
+        "Não"
+      ],
+      "tipo": "unica",
+      "max_escolhas": null,
+      "exclusivas": [],
+      "excluir": [
+        "Prefiro não responder",
+        "Não se aplica"
+      ]
+    },
+    {
+      "id": "b2b_q12",
+      "grupo": "profissionais",
+      "coluna": "b2b_q12",
+      "pergunta": "Na sua percepção, as parturientes que você acompanha costumam saber identificar e denunciar violência obstétrica?",
+      "titulo": "Na sua percepção, as parturientes que você acompanha costumam saber identificar e denunciar violência obstétrica?",
+      "opcoes": [
+        "Sim, a maioria sabe e denuncia quando necessário",
+        "Sabem identificar, mas raramente denunciam",
+        "A maioria não sabe identificar nem denunciar",
+        "Não sei avaliar"
+      ],
+      "tipo": "unica",
+      "max_escolhas": null,
+      "exclusivas": [],
+      "excluir": [
+        "Prefiro não responder",
+        "Não se aplica"
+      ]
+    },
+    {
+      "id": "b3_q2",
+      "grupo": "geral",
+      "coluna": "b3_q2",
+      "pergunta": "Em uma escala de 1 a 5, o quanto você considera que a violência obstétrica é subnotificada no Brasil?",
+      "titulo": "Em uma escala de 1 a 5, o quanto você considera que a violência obstétrica é subnotificada no Brasil?",
+      "opcoes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "Não sei opinar"
+      ],
+      "tipo": "unica",
+      "max_escolhas": null,
+      "exclusivas": [],
+      "excluir": [
+        "Prefiro não responder",
+        "Não se aplica"
+      ]
+    },
+    {
+      "id": "b3_q7",
+      "grupo": "geral",
+      "coluna": "b3_q7",
+      "pergunta": "Você considera que uma plataforma pública que reúne e possibilite visualizar dados sobre violência obstétrica poderia ser útil para:",
+      "titulo": "Você considera que uma plataforma pública que reúne e possibilite visualizar dados sobre violência obstétrica poderia ser útil para:",
+      "opcoes": [
+        "Ajudar mulheres a identificar e denunciar situações de violência obstétrica",
+        "Subsidiar políticas públicas de saúde",
+        "Dar visibilidade ao tema para a sociedade em geral",
+        "Apoiar pesquisas acadêmicas e jornalísticas",
+        "Não vejo utilidade clara"
+      ],
+      "tipo": "multipla",
+      "max_escolhas": null,
+      "exclusivas": [
+        "Não vejo utilidade clara"
+      ],
+      "excluir": [
+        "Prefiro não responder",
+        "Não se aplica"
+      ]
+    },
+    {
+      "id": "b3_q9",
+      "grupo": "geral",
+      "coluna": "b3_q9",
+      "pergunta": "Você prefere consumir informações em qual formato?",
+      "titulo": "Você prefere consumir informações em qual formato?",
+      "opcoes": [
+        "Gráficos e visualizações interativas",
+        "Textos explicativos",
+        "Infográficos estáticos",
+        "Vídeos ou animações",
+        "Combinação de formatos"
+      ],
+      "tipo": "unica",
+      "max_escolhas": null,
+      "exclusivas": [],
+      "excluir": [
+        "Prefiro não responder",
+        "Não se aplica"
+      ]
+    }
+  ]
+}

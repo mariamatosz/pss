@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Subnotificação da violência obstétrica no Brasil</title>
+<meta name="description" content="Plataforma de conscientização sobre violência obstétrica para gestantes, puérperas e mulheres que querem engravidar, com dados e fontes.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#topo">Pular para o conteúdo</a>
+
+<header class="nav">
+  <div class="container">
+    <a class="logo" href="#topo">Parto sem silêncio</a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="links" id="menu" aria-label="Seções">
+      <a href="#entenda">Entenda</a>
+      <a href="#painel">Dados</a>
+      <a href="#resultados-pesquisa">Resultados da pesquisa</a>
+      <a href="#direitos">Seus direitos</a>
+      <a href="#cuidados">Cuidados</a>
+      <a href="#fontes">Fontes</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+
+  <div class="container hero">
+    <div class="tcc">
+      
+      <p class="eyebrow">Projeto de TCC · IFB · TSI</p>
+    </div>
+    <h1>Subnotificação da <strong>violência obstétrica</strong> no Brasil</h1>
+    <p class="sub"><strong>Nem toda violência é reconhecida no momento em que acontece.</strong> E reconhecer o que aconteceu nem sempre leva a uma denúncia. Este espaço reúne informações e dados para compreender essas barreiras, conhecer direitos e encontrar apoio.</p>
+    <div class="btns">
+      <a class="btn primary" href="#entenda">Entender o tema</a>
+      <a class="btn ghost" href="#painel">Ver os dados</a>
+    </div>
+
+    <div class="hstats">
+      <article class="hstat"><span class="stat-label">Cuidado com dignidade</span><h2 class="n">Você merece respeito</h2><p>Suas dúvidas, sua dor e seus sentimentos merecem atenção. <strong>Você deve ser acolhida durante o atendimento.</strong></p><a class="src" href="#cuidados">Conhecer o cuidado respeitoso ↗</a></article>
+      <article class="hstat"><span class="stat-label">Informação e autonomia</span><h2 class="n">Seu corpo, suas escolhas</h2><p>Receber explicações e participar das decisões faz parte do cuidado. <strong>Suas perguntas importam.</strong></p><a class="src" href="#direitos">Conhecer seus direitos ↗</a></article>
+      <article class="hstat"><span class="stat-label">Você merece ser ouvida</span><h2 class="n">Sua voz importa</h2><p>Se algo no atendimento fez você se sentir humilhada ou desrespeitada, <strong>sua experiência merece atenção.</strong> Conheça caminhos para buscar orientação.</p><a class="src" href="#canais">Onde buscar apoio ↗</a></article>
+    </div>
+    <nav class="percurso" aria-label="Explore o tema"><a href="#entenda">Reconhecer</a><a href="#painel">Pesquisas</a><a href="#indicadores-publicos">Registros</a><a href="#barreiras">Barreiras</a><a href="#perfil">Desigualdades</a><a href="#comparativo">Outros países</a></nav>
+  </div>
+
+  <section id="entenda" class="band">
+    <div class="container">
+      <p class="eyebrow">Entenda</p>
+      <h2>Nem toda violência é reconhecida</h2>
+      <p class="lede">Violações de direitos no pré-natal, parto, pós-parto ou abortamento podem envolver humilhação, força, omissão de cuidados e desrespeito à autonomia. <a class="src" href="#fonte-msmaterna">Ministério da Saúde</a></p>
+      <div class="painel" id="painel-tipos"></div>
+
+      <div class="glos-head">
+        <h3>Palavras que aparecem no parto</h3>
+        <button class="seg" type="button" id="glos-toggle" aria-pressed="false">Abrir todas</button>
+      </div>
+      <div class="glos" id="glossario"></div>
+    </div>
+  </section>
+
+  <section id="painel"><div class="container">
+    <p class="eyebrow">Experiências relatadas</p>
+    <div class="painel" id="painel-numeros"></div>
+    <p class="passagem"><strong>Relatar em uma pesquisa e registrar uma denúncia são coisas diferentes.</strong> A seguir, veja o que chegou ao OuvidorSUS.</p>
+    <noscript><p>Ative o JavaScript para consultar os gráficos e os conteúdos interativos.</p></noscript>
+  </div></section>
+
+  <section id="indicadores-publicos" class="band" aria-labelledby="titulo-indicadores">
+    <div class="container">
+      <p class="eyebrow">Levantamento da autora</p>
+      <h2 id="titulo-indicadores">O que chega aos registros</h2>
+      <p class="lede">Aqui estão as manifestações sobre violência obstétrica registradas de 2016 a 2025, obtidas por solicitação da autora. Veja a evolução dos registros ao longo dos anos.</p>
+      <label for="indicador-selecao" hidden><strong>Conjunto de registros</strong></label>
+      <select id="indicador-selecao" hidden disabled><option>Carregando indicadores…</option></select>
+      <div id="indicador-status" role="status" aria-live="polite"></div>
+      <div id="indicador-conteudo"></div>
+      <details><summary>Como interpretar esses registros?</summary>
+        <p><strong>Pesquisa:</strong> estima experiências ou percepções da população estudada, conforme perguntas, amostragem e período.</p>
+        <p><strong>Registro administrativo:</strong> descreve o que foi registrado em um sistema. Uma manifestação em ouvidoria não equivale automaticamente a uma mulher ou a uma ocorrência confirmada.</p>
+        <p><strong>Subnotificação:</strong> corresponde a situações que não entram no registro considerado. Não calculamos uma taxa nacional combinando percentuais de pesquisas e totais de denúncias de bases diferentes.</p>
+        <p>Perguntas e populações diferentes produzem medidas diferentes. <a class="src" href="#fonte-revisao2024">Leite e colaboradores</a></p>
+      </details>
+      <noscript><p>Ative o JavaScript ou <a href="dados/indicadores-publicos.json">consulte o arquivo de dados públicos</a>.</p></noscript>
+    </div>
+  </section>
+
+  <section id="barreiras"><div class="container"><p class="eyebrow">Entre viver e registrar</p><div class="painel" id="painel-barreiras"></div><p class="passagem"><strong>A responsabilidade pela violência não é de quem a sofreu.</strong> Conhecer os canais de atendimento é uma possibilidade de apoio, não uma obrigação de denunciar.</p><a class="btn ghost" href="#canais">Encontrar orientação</a></div></section>
+  <section id="perfil" class="band"><div class="container"><p class="eyebrow">Desigualdades no cuidado</p><div class="painel" id="painel-perfil"></div><details><summary>O que esses dados dizem sobre a subnotificação?</summary><p>Este estudo compara situações do atendimento por raça/cor. Ele não mede quantas mulheres deixaram de denunciar nem permite atribuir uma taxa de subnotificação a cada grupo. Para compreender as barreiras ao registro, consulte a seção anterior.</p></details></div></section>
+  <section id="comparativo"><div class="container"><p class="eyebrow">Reconhecimento e proteção</p><div class="painel" id="painel-internacional"></div></div></section>
+
+  <section id="direitos">
+    <div class="container">
+      <p class="eyebrow">Seus direitos</p>
+      <h2>Conhecer direitos e encontrar apoio</h2>
+      <p class="lede">Saiba quem pode acompanhar você, quais informações pedir e onde registrar uma situação de desrespeito.</p>
+      <div class="rights">
+        <div class="right"><h3>Acompanhante</h3><p>Pessoa adulta de sua escolha pode acompanhar consultas, exames e procedimentos em serviços públicos e privados, sem aviso prévio. Existem regras específicas para sedação, centro cirúrgico, UTI e urgências. <a class="src" href="#fonte-lei14737">Legislação federal</a></p></div>
+        <div class="right"><h3>Doula</h3><p>A lei assegura sua presença quando solicitada, no trabalho de parto e pós-parto imediato, nas redes pública e privada. Ela não substitui o acompanhante nem a equipe de saúde. <a class="src" href="#fonte-lei15381">Legislação federal</a></p></div>
+        <div class="right"><h3>Informação e participação</h3><p>Você deve receber explicações sobre procedimentos e participar das decisões. Converse sobre suas preferências e registre-as no plano de parto. <a class="src" href="#fonte-caderneta2026">Ministério da Saúde</a></p></div>
+        <div class="right"><h3>Documentação</h3><p>Para relatar uma situação, reúna as informações disponíveis, como datas, local e testemunhas, e solicite cópia do prontuário. <a class="src" href="#fonte-mpdenuncia">Ministério Público</a></p></div>
+      </div>
+      <div class="channels" id="canais"></div>
+      <p class="note">Confira os canais atualizados nos sites oficiais. Esta página não substitui orientação jurídica ou médica.</p>
+    </div>
+  </section>
+
+  <section id="cuidados" aria-labelledby="titulo-cuidados" class="band">
+    <div class="container">
+      <p class="eyebrow">Informação para cada etapa</p>
+      <h2 id="titulo-cuidados">O que esperar de um cuidado respeitoso</h2>
+      <p class="lede">Ser acolhida também é entender o que está acontecendo, ter sua privacidade respeitada e poder participar das decisões. <a class="src" href="#fonte-omsrespeito2025">OMS</a></p>
+      <div class="info">
+        <article class="icard"><h3>Antes do parto</h3><p>Converse sobre suas preferências e dúvidas, a maternidade de referência e quem você deseja ao seu lado. O plano de parto registra preferências e pode ser revisto ao longo do cuidado. <a class="src" href="#fonte-caderneta2026">Ministério da Saúde</a></p></article>
+        <article class="icard"><h3>Durante o atendimento</h3><p>Peça explicações sobre o motivo, os benefícios, os riscos e as alternativas dos procedimentos. Informação e participação fazem parte do cuidado. <a class="src" href="#fonte-caderneta2026">Ministério da Saúde</a></p></article>
+        <article class="icard"><h3>Depois do parto</h3><p>O cuidado continua no pós-parto. Busque a equipe para esclarecer dúvidas sobre recuperação e acompanhamento, você também pode procurar orientação sobre situações vivenciadas. <a class="src" href="#fonte-msmaterna">Ministério da Saúde</a></p></article>
+      </div>
+      <details><summary>Uma cesariana, por si só, significa violência?</summary><p>Não. O tipo de parto isoladamente não permite essa conclusão. A indicação clínica, a comunicação e o respeito à mulher precisam ser considerados. Os indicadores populacionais não avaliam decisões individuais. <a class="src" href="#fonte-omscs">OMS</a></p></details>
+      <details><summary>Doula e acompanhante são a mesma pessoa?</summary><p>São funções distintas. A presença da doula solicitada não exclui o acompanhante e não substitui a equipe de saúde. <a class="src" href="#fonte-lei15381">Legislação federal</a></p></details>
+      <details><summary>Como organizar um relato para buscar orientação?</summary><p>Anote, se possível, datas, local, o que aconteceu e testemunhas. Solicite cópia do prontuário e guarde protocolos de atendimento. Os canais abaixo ajudam a buscar orientação e registrar a situação. <a class="src" href="#fonte-mpdenuncia">Ministério Público</a> · <a class="src" href="#direitos">Ver canais de orientação</a></p></details>
+      <details><summary>Onde encontrar apoio jurídico?</summary><p>Consulte os canais oficiais da Defensoria Pública ou do Ministério Público da sua região. Um estudo de 2026 examinou a divulgação de cartilhas e canais pelas Defensorias, ele não substitui a conferência atual dos serviços locais. <a class="src" href="#fonte-defensorias2026">Fondello e colaboradores</a></p></details>
+    </div>
+  </section>
+
+  <section id="resultados-pesquisa" class="band" aria-labelledby="titulo-resultados">
+    <div class="container">
+      <p class="eyebrow">Pesquisa do projeto</p>
+      <h2 id="titulo-resultados">Resultados dos formulários</h2>
+      <p class="lede">Cada experiência ajuda a entender o que precisa mudar. Aqui serão reunidas as respostas de mulheres, doulas e profissionais que participarem da pesquisa.</p>
+      <div id="pesquisa-status" class="pesquisa-pendente" role="status" aria-live="polite">
+        <span class="pesquisa-selo">Aguardando resultados</span>
+        <h3>Resultados pendentes</h3>
+        <p>Os resultados serão publicados após a conclusão da coleta e análise das respostas. Ainda não há resultados disponíveis nesta seção.</p>
+      </div>
+      <div class="ctrl">
+        <button id="pesquisa-demo-toggle" class="seg" type="button" aria-expanded="false" aria-controls="pesquisa-demo-aviso pesquisa-conteudo">Ver demonstração</button>
+      </div>
+      <div id="pesquisa-demo-aviso" class="pesquisa-pendente" role="status" hidden>
+        <h3>Dados fictícios para demonstração</h3>
+        <p>Estes números não representam respostas da pesquisa. Servem apenas para demonstrar os gráficos e filtros. Não devem ser citados como resultados do TCC.</p>
+      </div>
+      <div id="pesquisa-conteudo" hidden>
+        <p id="pesquisa-resumo" class="plede"></p>
+        <p id="pesquisa-contexto-real" class="aviso">Os resultados descrevem as participantes desta pesquisa e não representam a frequência de violência obstétrica no Brasil. Experiências pessoais e percepções profissionais são apresentadas separadamente.</p>
+        <div class="ctrl" id="pesquisa-filtros" role="group" aria-label="Escolher grupo de resultados"></div>
+        <div id="pesquisa-graficos"></div>
+        <p id="pesquisa-fonte-real" class="note">Fonte: questionários do projeto Parto sem silêncio. Percentuais calculados sobre as respostas válidas de cada pergunta. Questões de múltipla escolha podem somar mais de 100%. Respostas abertas e dados de identificação não são publicados.</p>
+      </div>
+      <noscript><p class="note">Ative o JavaScript para consultar os resultados atualizados.</p></noscript>
+    </div>
+  </section>
+
+  <section id="sobre"><div class="container"><p class="eyebrow">Sobre o projeto</p><h2>Dar visibilidade ao que fica fora dos registros</h2><p class="lede">O Parto sem silêncio reúne pesquisas, registros públicos e orientações para ajudar a reconhecer a violência obstétrica e compreender os limites dos dados disponíveis sobre sua subnotificação.</p><p>Pesquisas sobre experiências, manifestações em ouvidoria e respostas aos formulários do projeto são apresentados separadamente. Cada conjunto tem sua população, seu período e sua forma de coleta.</p><p><strong>O sistema não estima uma taxa nacional de subnotificação.</strong> Seu objetivo é tornar as evidências acessíveis e aproximar as pessoas de informações sobre direitos e apoio.</p></div></section>
+
+  <section id="fontes" class="band">
+    <div class="container">
+      <p class="eyebrow">Fontes</p>
+      <h2>Fontes dos dados e das orientações</h2>
+      <p class="lede">Os dados priorizam o Brasil e o Distrito Federal. O comparativo internacional também consulta leis da Argentina e do Uruguai. Consulte a instituição, o período e o documento original de cada informação. As orientações de cuidado também usam recomendações da OMS.</p>
+      <div class="aviso"><strong>Revisão informada pela autora: 13/11/2026.</strong> As conferências documentais realizadas nesta versão constam nos detalhes de cada referência. Os questionários do projeto permanecem separados das fontes públicas. A conferência documental dos registros do OuvidorSUS depende da resposta original do pedido, ainda não anexada. Novas publicações podem exigir atualização.</div>
+      <details class="criterios-fontes"><summary>Como os conteúdos foram selecionados</summary><p>Para orientações e direitos, usamos documentos de órgãos públicos e legislação. Para números, buscamos o estudo ou relatório de origem e identificamos sua população. Fontes históricas são sinalizadas. Não calculamos a taxa nacional de subnotificação por comparação entre bases incompatíveis. O portal do Nascer no Brasil II pode ser consultado para acompanhar novas publicações. <a class="src" href="#fonte-nascer2">Fiocruz</a></p></details>
+      <label for="busca-fontes"><strong>Buscar por instituição, tema ou ano</strong></label>
+      <input type="search" id="busca-fontes" placeholder="Ex.: OMS, 2026, acompanhante" autocomplete="off">
+      <p id="fontes-contagem" class="note" role="status" aria-live="polite"></p>
+      <ol class="fontes" id="lista-fontes"></ol>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Reconhecer é o primeiro passo para buscar ajuda</h2>
+      <p>Uma proposta de sistema web para conscientização de mulheres gestantes, puérperas e que querem engravidar.</p>
+      <a class="btn" href="#topo">Voltar ao início</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <span>Maria Fernanda Souza Matos, 2026 · Orientadora: Profa. Dra. Sylvana Karla da Silva de Lemos Santos</span>
+    <span class="foot-tcc">TCC · Tecnologia em Sistemas para Internet · IFB Campus Brasília</span>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+<script src="graficos.js"></script>
+<script src="resultados.js"></script>
+<script src="indicadores.js"></script>
+</body>
+</html>

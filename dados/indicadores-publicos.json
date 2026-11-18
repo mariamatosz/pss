@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "revisado_em": "2026-11-17",
+  "conjuntos": [
+    {
+      "id": "ouvidorsus-autora",
+      "titulo": "Registros de violência obstétrica no OuvidorSUS",
+      "tipo": "line",
+      "fonte": "ouvidorsus2026",
+      "periodo": "2016 a 2025",
+      "abrangencia": "Brasil",
+      "populacao": "Manifestações registradas no OuvidorSUS, conforme o levantamento solicitado pela autora.",
+      "localizador": "Resposta administrativa original pendente de anexação e conferência",
+      "nota": "Total de 641 manifestações recebidas. Esses registros não estimam todas as mulheres que sofreram violência. A resposta original do pedido ainda precisa ser anexada e conferida.",
+      "unidade": "manifestações",
+      "url": "https://falabr.cgu.gov.br/",
+      "publicacao": "Data da resposta a confirmar no documento original",
+      "itens": [
+        {
+          "rotulo": "2016",
+          "valor": 6.0
+        },
+        {
+          "rotulo": "2017",
+          "valor": 4.0
+        },
+        {
+          "rotulo": "2018",
+          "valor": 16.0
+        },
+        {
+          "rotulo": "2019",
+          "valor": 110.0
+        },
+        {
+          "rotulo": "2020",
+          "valor": 54.0
+        },
+        {
+          "rotulo": "2021",
+          "valor": 8.0
+        },
+        {
+          "rotulo": "2022",
+          "valor": 71.0
+        },
+        {
+          "rotulo": "2023",
+          "valor": 115.0
+        },
+        {
+          "rotulo": "2024",
+          "valor": 136.0
+        },
+        {
+          "rotulo": "2025",
+          "valor": 121.0
+        }
+      ]
+    }
+  ]
+}
